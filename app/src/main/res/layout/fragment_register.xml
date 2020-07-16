@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".patientfragments.RegisterFragment"
+    android:orientation="vertical"
+    android:background="@color/back_ground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/back_ground"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="left|center"
+            android:id="@+id/welcomeText"
+            android:layout_marginStart="20dp"
+            android:text="@string/patent_register_fragment"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="RtlCompat"
+            />
+
+        <!--        <ImageView-->
+        <!--            android:src="@mipmap/icon_app"-->
+        <!--            android:foregroundGravity="center"-->
+        <!--            android:layout_width="@dimen/_50sdp"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:layout_toEndOf="@id/welcomeText"-->
+        <!--            android:layout_marginStart="@dimen/_3sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_8sdp"-->
+        <!--            android:contentDescription="TODO"-->
+        <!--            tools:ignore="RtlCompat" />-->
+
+        <ImageView
+            android:src="@mipmap/icon_app"
+            android:foregroundGravity="center"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_name"
+                            android:inputType="textPersonName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_username"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_address"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_mobile"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_identity_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_identity_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_identity_num"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/patent_register_fragment_id_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_register_fragment_password"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:id="@+id/patent_register_fragment_id_birth_date_relative_layout"
+                        >
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/patent_register_fragment_id_birth_date_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            >
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/patent_register_fragment_id_birth_date"
+                                android:gravity="start|center"
+                                android:hint="@string/patent_register_fragment_birth_date"
+                                android:textSize="@dimen/_14ssp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_alignParentStart="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                tools:ignore="RtlCompat"
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:foregroundGravity="center"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+
+                            android:contentDescription="TODO" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_5sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/patent_register_fragment_id_layout_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/patent_register_fragment_id_gender"
+                            android:gravity="start|center"
+                            android:hint="@string/patent_register_fragment_title_gender"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:ignore="RtlCompat"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/patent_register_fragment_id_btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:text="@string/patent_register_fragment_btn_register"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_background"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/patent_register_fragment_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/patent_register_fragment_login"
+                android:gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

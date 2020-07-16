@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#ffff"
+        android:background="@color/back_ground"
         >
         <androidx.appcompat.widget.AppCompatTextView
             android:gravity="left|center"
@@ -27,6 +27,7 @@
             />
 
         <ImageView
+            android:src="@mipmap/icon_app"
             android:foregroundGravity="center"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="?attr/actionBarSize"

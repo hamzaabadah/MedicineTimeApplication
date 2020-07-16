@@ -32,5 +32,38 @@
 
     <!-- item_drug_notifications strings -->
 
+    <!-- patent_log_in_fragment strings -->
 
+    <string name="patent_log_in_fragment">Log In Patient</string>
+    <string name="patent_log_in_fragment_identity_num">Identity Number</string>
+    <string name="patent_log_in_fragment_password">Password</string>
+    <string name="patent_log_in_fragment_btn_log_in">LogIn</string>
+    <string name="patent_log_in_fragment_register">Register</string>
+    <string name="patent_log_in_fragment_forget_password">forget password</string>
+
+    <!-- api_controller_auth_patient strings -->
+    <string name="api_controller_auth_patient_identity_num_error">enter identity number</string>
+    <string name="api_controller_auth_patient_password_error">enter password</string>
+
+    <string name="no_connection">no_connection</string>
+
+    <!-- patent_register_fragment strings -->
+
+    <string name="patent_register_fragment">Register Patient</string>
+    <string name="patent_register_fragment_name">Patient Name</string>
+    <string name="patent_register_fragment_identity_num">Patient IdentityNumber</string>
+    <string name="patent_register_fragment_gender">Patient Gender</string>
+    <string name="patent_register_fragment_address">Patient Address</string>
+    <string name="patent_register_fragment_mobile">Patient Mobile</string>
+    <string name="patent_register_fragment_birth_date">Click To Set Patient BirthDate</string>
+    <string name="patent_register_fragment_username">Patient Username</string>
+    <string name="patent_register_fragment_password">Patient Password</string>
+    <string name="patent_register_fragment_btn_register">Register</string>
+    <string name="patent_register_fragment_login">Login</string>
+    <string name="patent_register_fragment_title_dialog">Set Gender (female or male)</string>
+    <string name="patent_register_fragment_title_gender">Click to Set Gender</string>
+
+    <string name="gender_type_male">Male</string>
+    <string name="gender_type_female">Female</string>
+    <string name="gender_type_chanel">Chanel</string>
 </resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".patientfragments.PatientLogInFragment"
+    android:background="@color/back_ground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/back_ground"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:gravity="left|center"
+            android:id="@+id/welcomeText"
+            android:layout_marginStart="20dp"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="RtlCompat"
+            />
+
+<!--        <ImageView-->
+<!--            android:src="@mipmap/icon_app"-->
+<!--            android:foregroundGravity="center"-->
+<!--            android:layout_width="@dimen/_50sdp"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:layout_toEndOf="@id/welcomeText"-->
+<!--            android:layout_marginStart="@dimen/_3sdp"-->
+<!--            android:layout_marginTop="@dimen/_8sdp"-->
+<!--            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--            android:contentDescription="TODO"-->
+<!--            tools:ignore="RtlCompat" />-->
+
+        <ImageView
+            android:src="@mipmap/icon_app"
+            android:foregroundGravity="center"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                app:cardElevation="@dimen/_4sdp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patent_log_in_fragment"
+                    android:textSize="@dimen/_20ssp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                app:cardElevation="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/id_patent_log_in_fragment_layout_identity_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/id_patent_log_in_fragment_identity_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_log_in_fragment_identity_num"
+                            android:inputType="number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/back_ground">
+                    </View>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/id_patent_log_in_fragment_layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        app:passwordToggleEnabled="true"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/id_patent_log_in_fragment_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="@string/patent_log_in_fragment_password"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_patent_log_in_fragment_forget_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:text="@string/patent_log_in_fragment_forget_password"
+                android:gravity="start"
+                android:textSize="@dimen/_14ssp"
+
+                android:textColor="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/id_patent_log_in_fragment_btn_log_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:text="@string/patent_log_in_fragment_btn_log_in"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:background="@drawable/btn_background"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/id_patent_log_in_fragment_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/patent_log_in_fragment_register"
+                android:gravity="start"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    
+
+</LinearLayout >
