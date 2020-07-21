@@ -7,4 +7,7 @@ object ApiLinks {
     val REGISTER_URL = "$BASE_URL/patient/register"
 
     val PATIENT_INFO_URL ="$BASE_URL/patient/info"
+    val MY_DOCTORS="$BASE_URL/patient/doctors"
+
+    val DOCTOR_INFO = "$BASE_URL/patient/doctors/"
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:outlineSpotShadowColor="@color/colorPrimary"
+    app:cardElevation="@dimen/_4sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/item_drug_of_doctor_img"
+                android:foregroundGravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/icons_doctor"
+                tools:ignore="RtlCompat"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_toEndOf="@+id/item_drug_of_doctor_img"
+                android:gravity="left|center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/item_drug_of_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Drug Name"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="RtlCompat" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@color/back_ground">
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:gravity="start|center"
+                android:id="@+id/item_drug_of_doctor_dose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <ImageView
+                android:foregroundGravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/icon_dose"
+                tools:ignore="RtlCompat"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -13,10 +13,13 @@
     <string name="home_fragment_connect_with_us">Connect</string>
     <string name="home_fragment_conditions">Conditions</string>
     <string name="home_fragment_our_clinic">Our Clinic</string>
+    <string name="home_fragment_connect_next_visits">Next Visits</string>
+    <string name="home_fragment_click_item_next_visit">Click Item To Show More Details</string>
 
     <!-- DashboardFragment strings -->
     <string name="dashboard_fragment_toolbar">Dashboard</string>
     <string name="dashboard_fragment_my_medical_reviews">My medical reviews</string>
+    <string name="dashboard_fragment_list_of_doctors">List of My Doctors</string>
 
 
     <!-- notificationsFragment strings -->
@@ -29,6 +32,13 @@
     <string name="item_my_medical_reviews_date">Date</string>
     <string name="item_my_medical_reviews_clock">Clock</string>
     <string name="item_my_medical_reviews_name_clinic">Clinic</string>
+    <string name="profile_fragment_who_are_we">Who Are We</string>
+    <string name="profile_fragment_edit_profile">Edit profile Information</string>
+    <string name="profile_fragment_change_password">Change Password</string>
+    <string name="profile_fragment_logout">Logout</string>
+    <string name="profile_fragment_contact">contact with us</string>
+    <string name="profile_fragment_terms_and_conditions">Terms and Conditions</string>
+
 
     <!-- item_drug_notifications strings -->
 
@@ -66,4 +76,27 @@
     <string name="gender_type_male">Male</string>
     <string name="gender_type_female">Female</string>
     <string name="gender_type_chanel">Chanel</string>
+
+    <!-- next_visit_activity strings -->
+    <string name="next_visit_activity">Next Visit Details</string>
+    <string name="next_visit_activity_details">Clinic Details</string>
+    <string name="next_visit_activity_clinic_name">Clinic Name</string>
+    <string name="next_visit_activity_clinic_address">Clinic Address</string>
+    <string name="next_visit_activity_clinic_phone">Clinic Phone</string>
+    Call the clinic
+    <string name="next_visit_activity_call_clinic">Call The Clinic</string>
+
+    <string name="next_visit_activity_name_doctor">Name Of Doctor</string>
+    <string name="next_visit_activity_medical_review_time">Time Of Medical Review</string>
+
+    <!--    item_my_doctors-->
+    <string name="item_my_doctors_details">details doctor and drugs</string>
+
+    <!--    item_next_visit-->
+    <string name="item_next_visit_details">Click for details</string>
+
+    <!--    patient_drug_info_activity-->
+    <string name="patient_drug_info_activity">Drugs of Doctor</string>
+    <string name="patient_drug_info_activity_doctor">Doctor information</string>
+    <string name="patient_drug_info_activity_list_of_drugs">List Drugs of Doctor</string>
 </resources>

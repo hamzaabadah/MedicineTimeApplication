@@ -1,10 +1,13 @@
 package com.example.medicinetimeapplication
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 import com.example.medicinetimeapplication.apiclasses.Utility
+import com.example.medicinetimeapplication.helperclasses.SharedPreferencesHelper
+import com.example.medicinetimeapplication.model.Doctor
+
 
 class SplashActivity : AppCompatActivity() {
 
@@ -15,9 +18,12 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
 
+
             // Check if user logged in before or not
             val preferences = getSharedPreferences("isLogin", MODE_PRIVATE)
             var logged_in= preferences.getString("token","")
+
+
 
             if (logged_in?.isNotEmpty()!!) {
                 Utility.startNewActivity(this,MainActivity::class.java)

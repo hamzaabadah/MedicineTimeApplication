@@ -8,7 +8,11 @@ import android.net.ConnectivityManager
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.example.medicinetimeapplication.PatientDrugInfoActivity
+import com.example.medicinetimeapplication.ProfileControllerActivity
 import com.example.medicinetimeapplication.R
+import com.example.medicinetimeapplication.model.Doctor
+import com.example.medicinetimeapplication.model.MyDoctorModel
 import kotlinx.android.synthetic.main.fragment_register.view.*
 import java.util.*
 
@@ -20,6 +24,26 @@ object Utility {
             context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val networkInfo = connMgr.activeNetworkInfo
         return networkInfo != null && networkInfo.isConnected
+    }
+
+    fun startNewActivityWithOutFinish(context: Context, clazz: Class<*>) {
+        val intent = Intent(context, clazz)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+        context.startActivity(intent)
+    }
+
+    fun launchNextScreen(context: Context, myDoctorModel:  MyDoctorModel): Intent {
+        val intent = Intent(context, PatientDrugInfoActivity::class.java)
+        intent.putExtra("myDoctorModel", myDoctorModel)
+        context.startActivity(intent)
+        return intent
+    }
+
+    fun sendIdToReplacedProfileFragments(context: Context , id:Int):Intent{
+        val intent = Intent(context, ProfileControllerActivity::class.java)
+        intent.putExtra("id_replaced_fragment",id)
+        context.startActivity(intent)
+        return intent
     }
 
     fun startNewActivity(context: Context, clazz: Class<*>) {

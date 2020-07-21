@@ -14,6 +14,7 @@ import com.example.medicinetimeapplication.R
 import com.example.medicinetimeapplication.apiclasses.ApiLinks
 import com.example.medicinetimeapplication.apiclasses.ApiSingleton
 import com.example.medicinetimeapplication.apiclasses.Utility
+import com.example.medicinetimeapplication.apiclasses.VolleyParseError
 import kotlinx.android.synthetic.main.fragment_patient_log_in.view.*
 import kotlinx.android.synthetic.main.fragment_register.view.*
 import org.json.JSONException
@@ -82,6 +83,7 @@ class ApiControllerAuthPatient(var context: Context):AuthPatientInterface {
 
                             Toast.makeText(context!!, response.getString("message")+response.getString("status_code"), Toast.LENGTH_LONG).show()
                             var array = response.getJSONObject("data")
+                            var idPatient = response.getInt("id")
                             var arrayin = array.getJSONObject("token")
                             var accessToken = arrayin.getString("access_token")
                             var tokenType = arrayin.getString("token_type")
@@ -89,6 +91,7 @@ class ApiControllerAuthPatient(var context: Context):AuthPatientInterface {
                             val sharedPreferences= context.getSharedPreferences("isLogin", Context.MODE_PRIVATE)
                             val editorLogin= sharedPreferences.edit()
                             editorLogin.putString("token", "$tokenType $accessToken")
+                            editorLogin.putInt("id_patient",idPatient)
                             editorLogin.apply()
 
                             Utility.startNewActivity(context,MainActivity::class.java)
@@ -325,6 +328,7 @@ class ApiControllerAuthPatient(var context: Context):AuthPatientInterface {
                             else -> message = error.toString()
                         }
 
+                        VolleyParseError.getInstance(context).parseVolleyError(error,TAG)
                         Log.d(TAG, message)
                         Toast.makeText(context!!, message, Toast.LENGTH_LONG).show()
                     }

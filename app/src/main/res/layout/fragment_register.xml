@@ -14,7 +14,7 @@
         android:background="@color/back_ground"
         >
         <androidx.appcompat.widget.AppCompatTextView
-            android:gravity="left|center"
+            android:gravity="start|center"
             android:id="@+id/welcomeText"
             android:layout_marginStart="20dp"
             android:text="@string/patent_register_fragment"
@@ -44,11 +44,10 @@
             android:foregroundGravity="center"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="?attr/actionBarSize"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_margin="@dimen/_5sdp"
-            android:contentDescription="TODO" />
+            android:contentDescription="TODO"
+            tools:ignore="RtlCompat" />
     </RelativeLayout>
 
     <ScrollView

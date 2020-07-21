@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
     android:orientation="vertical"
     android:background="@color/back_ground">
@@ -34,86 +35,70 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_margin="@dimen/_8sdp"
+            android:layout_margin="@dimen/_5sdp"
             android:contentDescription="TODO" />
     </RelativeLayout>
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:orientation="vertical"
-        android:layout_margin="@dimen/_10sdp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        app:cardElevation="@dimen/_4sdp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_1sdp"
-                android:layout_weight="1"
-                android:background="@drawable/text_border"
-                android:gravity="center_horizontal"
-                android:text="@string/home_fragment_connect_with_us"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15sdp" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:layout_marginRight="@dimen/_1sdp"
-                android:layout_weight="1"
-                android:background="@drawable/text_border"
-                android:gravity="center_horizontal"
-                android:text="@string/app_name"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15sdp" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/text_border"
-                android:gravity="center_horizontal"
-                android:text="@string/home_fragment_conditions"
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15sdp" />
-
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="@string/home_fragment_our_clinic"
-            android:textSize="@dimen/_16ssp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="viewStart"
-            android:gravity="start" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/id_home_fragment_our_clinic"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/_10sdp"
-            />
+            android:layout_marginTop="@dimen/_15sdp"
+
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/home_fragment_connect_next_visits"
+                />
 
 
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_marginEnd="@dimen/_8sdp"-->
+<!--                android:layout_marginStart="@dimen/_8sdp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/_12ssp"-->
+<!--                android:text="@string/home_fragment_click_item_next_visit"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                />-->
+
+            <View
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@color/back_ground">
+            </View>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:id="@+id/home_fragment_id_rc_next_visits"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-    </LinearLayout>
 
 
 </LinearLayout>
